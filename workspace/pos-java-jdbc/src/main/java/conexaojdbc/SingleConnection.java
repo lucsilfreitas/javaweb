@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class SingleConnection {
 	
-	private static String url = "jdbc:mysql://localhost/drmanager";
+	private static String url = "jdbc:mysql://localhost:3306/drmanager?autoReconnect=true&useSSL=false&useTimezone=true&amp;serverTimezone=UTC​​\"";
 	private static String password = "";
 	private static String user = "root";
 	private static Connection connection = null;
@@ -34,7 +34,7 @@ public class SingleConnection {
 			
 		}catch (Exception e) {
 			e.printStackTrace();
-			System.out.println("Erro de conexao!");
+			
 		}
 		
 		
