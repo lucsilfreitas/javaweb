@@ -5,8 +5,8 @@ import java.sql.DriverManager;
 
 public class SingleConnection {
 	
-	private static String url = "jdbc:mysql://localhost:3306/drmanager?autoReconnect=true&useSSL=false&useTimezone=true&amp;serverTimezone=UTC​​\"";
-	private static String password = "";
+	private static String url = "jdbc:mysql://localhost:3306/bddrmanager?useLegacyDatetimeCode=false&amp;serverTimezone=America/Sao_Paulo&amp;useSSL=false";
+	private static String password = "0311";
 	private static String user = "root";
 	private static Connection connection = null;
 	
